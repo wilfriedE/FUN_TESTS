@@ -1,8 +1,38 @@
 <html>
 <head>
 	<title>Captions Tests</title>
-	<script type="text/javascript" src="http//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script src="http//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="javascripts/jquery.hcaptions.js"></script>
+	<style type="text/css">
+
+		.hide {
+			visibility: hidden;
+		}
+	</style>
+	<script type="text/javascript">
+	$(window).load(function(){
+	  $('.hcaption').hcaptions();
+	});
+	</script>
 </head>
 <body>
+	<script type="text/javascript">
+	$(simple).hcaptions({
+	  effect: "fade"
+	});
+	</script>
+	<a href="#simple" cap-effect="fade" class="panel">
+  <img src="http://placehold.it/470x300/f1f1f1/aaa&text=Example" />
+</a>
+<div id="simple" class="cap-overlay hide">
+  <h5>Cupcakes</h5>
+  <div class="content">
+    Name: cupcakes.png<br />
+    Photography: Ryun Shofner<br />
+    <a href="javascript:void(0)" class="button small"><i class="icon-edit"></i> Edit</a> 
+    <a href="javascript:void(0)" class="button small"><i class="icon-remove"></i> Delete</a>
+  </div>
+</div>
+
 </body>
 </html>
